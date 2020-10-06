@@ -18,7 +18,7 @@ resource "google_compute_instance" "InternalProdUbuntu" {
 
   network_interface {
     # A default network is created for all GCP projects
-    network       = "default"
+    network       = "devoir1"
     access_config {
     }
   }
