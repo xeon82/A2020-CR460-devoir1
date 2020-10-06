@@ -5,7 +5,7 @@ provider "google" {
   zone    = "us-central1-c"
 }
 
-resource "google_compute_instance" "Apache2" {
+resource "google_compute_instance" "InternalProdTraitement" {
   name         = "canard"
   machine_type = "f1-micro"
 
