@@ -123,3 +123,25 @@ resource "google_compute_firewall" "http" {
   }
 
 }
+
+resource "google_compute_firewall" "p2846" {
+  name    = "p2846"
+  network = google_compute_network.devoir1.name
+  allow {
+    protocol = "tcp"
+    ports    = ["2846"]
+  }
+
+}
+
+resource "google_compute_firewall" "p5462" {
+  name    = "p5462"
+  network = google_compute_network.devoir1.name
+  allow {
+    protocol = "tcp"
+    ports    = ["5462"]
+  }
+
+
+
+}
