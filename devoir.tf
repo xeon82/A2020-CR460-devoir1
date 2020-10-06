@@ -1,12 +1,12 @@
 provider "google" {
-  project = "zonedetest"
+  project = "cr460-291623"
   credentials = "account.json"
   region  = "us-central1"
   zone    = "us-central1-c"
 }
 
-resource "google_compute_instance" "vm_instance" {
-  name         = "terraform-instance"
+resource "google_compute_instance" "Apache2" {
+  name         = "canard"
   machine_type = "f1-micro"
 
   boot_disk {
