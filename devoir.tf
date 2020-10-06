@@ -5,13 +5,13 @@ provider "google" {
   zone    = "us-central1-c"
 }
 
-resource "google_compute_instance" "InternalProdTraitement" {
-  name         = "canard"
+resource "google_compute_instance" "InternalProd" {
+  name         = "fermier"
   machine_type = "f1-micro"
 
   boot_disk {
     initialize_params {
-      image = "fedora-coreos-cloud/fedora-coreos-stable"
+      image = "ubuntu-os-cloud/ubuntu-2004-lts"
     }
   }
 
